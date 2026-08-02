@@ -1,0 +1,13 @@
+{
+  "name": "carepulse-crm-root",
+  "version": "1.0.0",
+  "description": "Monorepo root config for CarePulse Clinic CRM",
+  "scripts": {
+    "setup": "npm install && npm run install:client && npm run install:server",
+    "install:client": "cd client && npm install",
+    "install:server": "cd server && npm install",
+    "build:client": "cd client && npm run build",
+    "build": "npm run install:client && npm run build:client && npm run install:server",
+    "start": "cd server && npm start"
+  }
+}
